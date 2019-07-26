@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <header class="header">
+    <div class="header__top-line">
+        <div class="container">
+            <div class="header__top-line-wrapper">
+                <div class="header__top-line-mapblock">
+                    <img src="img/map-metka.png">
+                    <a href="#" class="header__top-line-searchmap"> Найди свой парк</a>
+                </div>
+                <div class="header__top-line-phoneblock">
+                    <img src="img/phones.png">
+                    <a href="tel:+74993945948" class="header__top-line-tel">+7(499)394-59-48</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__intro">  
+        <svg class="header__intro-frame"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1600 870"
+            preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <clipPath id="clip-wave">
+                <path d="M1600.000,0.200 L0.000,-0.000 L0.000,797.000 C8.542,804.437 16.695,808.974 24.476,801.655 C98.520,732.010 288.623,745.869 322.429,745.081 C356.236,744.293 930.080,868.643 1218.468,853.759 C1361.666,846.369 1498.612,793.190 1600.000,739.000 L1600.000,0.200 Z"/>
+                </clipPath>
+                <filter id="f-shadow">
+                    <feOffset result="offset" dy="5" in="SourceAlpha"/>
+                    <feGaussianBlur result="blur" stdDeviation="3.5"/>
+                    <feFlood result="flood" flood-opacity="0.25"/>
+                    <feComposite result="composite" operator="in" in2="blur"/>
+                    <feBlend result="blend" in="SourceGraphic"/>
+                </filter>
+                <linearGradient id="gradient-overlay" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#fff"/>
+                <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+            <g clip-path="url(#clip-artboard)">
+                    <g filter="url(#f-shadow)">
+                      <g clip-path="url(#clip-wave)">
+                        <image
+                          width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+                          xlink:href="img/bg-header.png"/>
+                        <rect x="0" y="50%" width="100%" height="50%" fill="url(#gradient-overlay)"/>
+                      </g>
+                    </g>
+                  </g>
+        </svg>
+        <div class="header__intro-content">
+            <h1 class="header__intro-title">День Рождения в ваули<br> за <span>1100р</span> 990 р с ребенка</h1>
+        </div>
+        <nav class="header__navigation">
+                <div class="container">
+                    <ul class="header__navigation-itemlist">
+                        <li class="header__navigation-item"><a href="#" class="header__navigation-link ">Наши игры</a></li>
+                        <li class="header__navigation-item"><a href="#" class="header__navigation-link">Галерея</a></li>
+                        <li class="header__navigation-item"><a href="#" class="header__navigation-logo"><img src="img/logo.png" alt="Ваули"></a></li>
+                        <li class="header__navigation-item"><a href="#" class="header__navigation-link">Праздники</a></li>
+                        <li class="header__navigation-item"><a href="#" class="header__navigation-link">Контакты</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
+</header>
+
+        <section class="game">
+    <div class="container">
+        <div class="game__inner">
+            <h2 class="game__inner-title title">Наши игры</h2>
+            <div class="game__inner-content">
+                <div class="game__inner-control">
+                    <a href="#" class="game__inner-link game__inner-link--active ">Лазертаг</a>
+                    <a href="#" class="game__inner-link">Ачертаг</a>
+                    <a href="#" class="game__inner-link">Вышибалы</a>
+                    <a href="#" class="game__inner-link">Квест</a>
+                </div>
+                <div class="game__inner-result">
+                    <div class="game__inner-item">
+
+                        <div class="game__inner-imgblock">
+                        
+                        <div class="game__inner-frame">
+                            <img src="img/sec-2-blockimg-1.png" alt="Первая картинка" class="game__inner-img">
+                        </div>
+
+                        <div class="game__inner-frame">
+                            <img src="img/sec-2-blockimg-1.png" alt="Первая картинка" class="game__inner-img">
+                        </div>
+
+                        <div class="game__inner-frame">
+                            <img src="img/sec-2-blockimg-1.png" alt="Первая картинка" class="game__inner-img">
+                        </div>
+
+                        <div class="game__inner-frame">
+                            <img src="img/sec-2-blockimg-1.png" alt="Первая картинка" class="game__inner-img">
+                        </div>
+
+                        </div>
+                        <div class="game__inner-description">
+                            <h2 class="game__inner-titledesc">Для детей от 3 лет</h2>
+                            <p class="game__inner-text">Самая популярная игра. Сражения на лазерных пистолетах. Дети разделяются 
+                                на команды. Яркая неоновая арена, лазерное оружие с индикаторами жизней.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="holidays">
+    <div class="container">
+        <div class="holidays__inner">
+            <h1 class="holidays__inner-title title">Наши праздники</h1>
+            <div class="holidays__inner-content">
+
+                <div class="holidays__inner-item">
+                    <img src="img/sec-3.png" alt="Праздники" class="holidays__inner-img">
+                    <div class="holidays__inner-itemcontent">
+                        <h2 class="holidays__inner-titleitem">Школьные праздники</h2>
+                        <div class="holidays__inner-star">
+
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+
+                        </div>
+                    </div>
+                    <button class="holidays__inner-btn">Забронировать</button>
+                </div>
+                <div class="holidays__inner-item">
+                    <img src="img/sec-3.png" alt="Праздники" class="holidays__inner-img">
+                    <div class="holidays__inner-itemcontent">
+                        <h2 class="holidays__inner-titleitem">Школьные праздники</h2>
+                        <div class="holidays__inner-star">
+
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+
+                        </div>
+                    </div>
+                    <button class="holidays__inner-btn">Забронировать</button>
+                </div>
+
+                <div class="holidays__inner-item">
+                    <img src="img/sec-3.png" alt="Праздники" class="holidays__inner-img">
+                    <div class="holidays__inner-itemcontent">
+                        <h2 class="holidays__inner-titleitem">Школьные праздники</h2>
+                        <div class="holidays__inner-star">
+
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+                            <span class="star">
+                                <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="16px" height="15px">
+                               <path fill-rule="evenodd"  fill="rgb(255, 184, 0)"
+                                d="M16.000,5.610 L10.981,9.193 L12.787,14.882 L7.902,11.400 L2.897,15.001 L4.897,9.266 L-0.002,5.803 L6.119,5.741 L8.096,-0.000 L9.879,5.696 L16.000,5.610 Z"/>
+                               </g>
+                               </svg>
+                            </span>
+
+                        </div>
+                    </div>
+                    <button class="holidays__inner-btn">Забронировать</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section class="our">
+    <div class="container">
+        <div class="our__inner">
+            <h1 class="our__inner-title title">О нашем центре</h1>
+            <p class="our__inner-text">Ваули- это развлекательное пространство для детей в формате веселых игр. Территория более 300 м² состоит из умных квест-комнат и тематических площадок для проведения детских праздников.<br>
+            <span>Праздничные программы разработаны на возраст от 3-х до 16-ти лет. Интересно будет и маленьким, и подросткам, и даже взрослым! Бронируйте квесты и праздники заранее - это выгодно на 20%</span></p>
+        </div>
+    </div>
+</section>   
+        <section class="gallery section">
+        <div class="gallery__inner">
+            <h1 class="gallery__inner-title title">галерея</h1>
+            <div class="gallery__inner__video-block">
+                <div class="gallery__inner__video-place"></div>
+                <img src="img/video.png" alt="Видео" class="gallery__inner__video-link">
+            </div>
+            <div class="container">
+                <div class="gallery__inner__item-list">
+                    <div class="gallery__inner__item">
+                        <img src="img/sec-4-img1.png" alt="" class="gallery__inner__item-photo">
+                    </div>
+
+                    <div class="gallery__inner__item">
+                        <img src="img/sec-4-img1.png" alt="" class="gallery__inner__item-photo">
+                    </div>
+
+                    <div class="gallery__inner__item">
+                        <img src="img/sec-4-img1.png" alt="" class="gallery__inner__item-photo">
+                    </div>
+
+                    <div class="gallery__inner__item">
+                        <img src="img/sec-4-img1.png" alt="" class="gallery__inner__item-photo">
+                    </div>
+
+                    <div class="gallery__inner__item">
+                        <img src="img/sec-4-img1.png" alt="" class="gallery__inner__item-photo">
+                    </div>
+
+                    <div class="gallery__inner__item">
+                        <img src="img/sec-4-img1.png" alt="" class="gallery__inner__item-photo">
+                    </div>
+
+                    <div class="gallery__inner__item">
+                        <img src="img/sec-4-img1.png" alt="" class="gallery__inner__item-photo">
+                    </div>
+
+                    <div class="gallery__inner__item">
+                        <a href="#"><img src="img/sec-4-img1.png" alt="" class="gallery__inner__item-photo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+        <section class="team section">
+    <div class="container">
+        <div class="team__inner">
+                <h2 class="team__inner-title title">О нашем центре</h2>
+            <div class="team__inner__tabs">
+                <div class="team__inner__tabs-control">
+                    <a href="#" class="team__inner__tabs-tab ">Руководители</a>
+                    <a href="#" class="team__inner__tabs-tab ">Администраторы</a>
+                    <a href="#" class="team__inner__tabs-tab team__inner__tabs-tab--active ">Аниматоры</a>
+                </div>
+                <div class="team__inner__tabs-list">
+
+                    <div class="team__inner__tabs-item">
+                        <div class="team__inner__tabs-img">
+                            <img src="img/avatar.png" class="team__inner__tabs-avatar">
+                        </div>
+                        <div class="team__inner__tabs-inf">
+                            <p class="team__inner__tabs-name">Иван 23 года </p>
+                            <p class="team__inner__tabs-text">Профессионал своего дела, быстро находит общий язык с детьми.
+                                Любит супер-героев.</p>
+                        </div>
+                    </div>
+
+                    <div class="team__inner__tabs-item">
+                        <div class="team__inner__tabs-img">
+                            <img src="img/avatar.png" class="team__inner__tabs-avatar">
+                        </div>
+                        <div class="team__inner__tabs-inf">
+                            <p class="team__inner__tabs-name">Иван 23 года </p>
+                            <p class="team__inner__tabs-text">Профессионал своего дела,быстро находит общий язык с детьми.
+                                Любит супер-героев.</p>
+                        </div>
+                    </div>
+
+                    <div class="team__inner__tabs-item">
+                        <div class="team__inner__tabs-img">
+                            <img src="img/avatar.png" class="team__inner__tabs-avatar">
+                        </div>
+                        <div class="team__inner__tabs-inf">
+                            <p class="team__inner__tabs-name">Иван 23 года </p>
+                            <p class="team__inner__tabs-text">Профессионал своего дела,быстро находит общий язык с детьми.
+                                Любит супер-героев.</p>
+                        </div>
+                    </div>
+
+                    <div class="team__inner__tabs-item">
+                        <div class="team__inner__tabs-img">
+                            <img src="img/avatar.png" class="team__inner__tabs-avatar">
+                        </div>
+                        <div class="team__inner__tabs-inf">
+                            <p class="team__inner__tabs-name">Иван 23 года </p>
+                            <p class="team__inner__tabs-text">Профессионал своего дела,быстро находит общий язык с детьми.
+                                Любит супер-героев.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+        <section class="call section">
+    <div class="container">
+        <div class="call__inner">
+            <h2 class="call__inner-title title">Заказать праздник</h2>
+            <div class="call__inner__content">
+                <p class="call__inner__content-text">Оставьте заявку<br>и наши менеджеры перезвонят Вам</p>
+                <form action="#" class="call__inner__content-form">
+                    <input type="text" name="" id="" class="call__inner__content-name" placeholder="Ваше имя*">
+                    <input type="tel" name="" id="" class="call__inner__content-tel" placeholder="Ваш телефон*">
+                    <input type="submit" value="Отправить" class="call__inner__content-submit">    
+                </form>
+            </div>
+            <div class="call__inner__bottomline">
+                <div class="call__inner__bottomline-inf">
+                        <div class="call__inner__bottomline-timeblock">
+                            <img src="img/time.png" alt="">
+                            <span class="call__inner__bottomline-time">с 11:00 - 21:00</span>
+                        </div>
+                        <div class="call__inner__bottomline-telblock">
+                            <img src="img/phone1.png" alt="">
+                            <span class="call__inner__bottomline-tel">+7 (499) 394-59-48</span>
+                        </div>
+                </div>
+                <div class="call__inner__bottomline-pay">
+                        <div class="call__inner__bottomline-cashblock">
+                            <img src="img/cash.png" >
+                            <span class="call__inner__bottomline-cash">Наличные</span>
+                        </div>
+                        <div class="call__inner__bottomline-cardblock">
+                            <img src="img/card.png" >
+                            <span class="call__inner__bottomline-card">Картой</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="contact section">
+    <div class="container">
+        <div class="contact__inner">
+            <h2 class="contact__inner-title title">Контакты</h2>
+            <div class="contact__inner__content">
+                <div class="contact__inner__content-map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aafa6c0e7151d2eedb8d6b2124663dcb0a1774024f66d625f88d491def17bc063&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contact__inner__content-list">
+
+                    <div class="contact__inner__content-item">
+                        <img src="img/contact-img.png" alt="Детский центр" class="contact__inner__content-img">
+                        <div class="contact__inner__content-text">
+                            <h2 class="contact__inner__content-title">Детский центр</h2>
+                            <p class="contact__inner__content-description">м. Черкизовская, ТЦ Город Хобби,
+                                Щелковское шоссе, дом 3, стр. 1, 3 эт.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__inner__content-item">
+                        <img src="img/contact-img2.png" alt="Детский центр" class="contact__inner__content-img">
+                        <div class="contact__inner__content-text">
+                            <h2 class="contact__inner__content-title">Детский центр</h2>
+                            <p class="contact__inner__content-description">Еще не открыт</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contact__inner__content-information">
+
+                    <div class="contact__inner__content-phone">
+                        <img src="img/phone.png" alt="" class="contact__inner__content-icon">
+                        <div class="contact__inner__content-info">
+                            <p class="contact__inner__content-textblock">Офисный телефон:</p>
+                            <a href="tel:+74957999917" class="contact__inner__content-link">+7 (495) 799 99 17</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__inner__content-mail">
+                        <img src="img/mail.png" alt="" class="contact__inner__content-icon">
+                        <div class="contact__inner__content-info">
+                            <p class="contact__inner__content-textblock">Корпоративный e-mail:</p>
+                            <a href="mailto:info@vauli.com" class="contact__inner__content-link">info@vauli.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <footer class="footer section">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__inner-leftblock">
+                <p class="footer__inner-copyright">2007-2019 Детский Центр “ Ваули”</p>
+                <a href="#" class="footer__inner-security">Безопасность</a>
+            </div>
+            <div class="footer__inner-socials">
+                <a href="#" class="footer__inner-link"><img src="img/vk.png" alt="vk"></a>
+                <a href="#" class="footer__inner-link"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="#" class="footer__inner-link"><img src="img/facebook.png" alt="faceblock"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="../js/main.min.js"></script>
+        <script src="../js/vendor.min.js"></script>
+    </body>
+</html>
